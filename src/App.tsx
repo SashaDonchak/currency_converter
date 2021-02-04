@@ -1,15 +1,17 @@
 import React from 'react';
-import {Button, DatePicker} from 'antd';
+import CustomTabs from './components/CustomTabs';
 import "antd/dist/antd.css";
 import './App.css';
+import { Layout } from 'antd';
 
-function App() {
-  return (
-    <div className="App">
-      <Button>Test</Button>
-      <DatePicker />
-    </div>
-  );
-}
+const { Content } = Layout;
+
+const App: React.FC = () => (
+  <Layout>
+    <Content className="container">
+      <CustomTabs />
+    </Content>
+  </Layout>
+);
 
 export default App;
