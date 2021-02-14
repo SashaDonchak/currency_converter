@@ -17,7 +17,7 @@ const Title = styled.h1`
 const App: React.FC = () => (
   <Container>
     <Title>Currency converter</Title>
-    <Tabs/>
+    <Tabs />
   </Container>
 );
 
